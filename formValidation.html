@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>FormValidation</title>
+    <script>
+        function data()
+    { 
+        var a = document.getElementById("v1").value;
+        var b = document.getElementById("v2").value;
+        var c = document.getElementById("v3").value;
+
+        if(a==""||b==''||c==''){
+            alert("All fields are mandatory.")
+            return false
+        }else true;
+    }
+    </script>
+</head>
+<body>
+    <form onsubmit="return data()" action="reverseString.html">
+        Name:<input type="text" id="v1"><br>
+        COURSE:<input type="text" id="v2">
+        Password:<input type="password" id="v3">
+        <input type="submit">
+    </form>
+</body>
+</html>
